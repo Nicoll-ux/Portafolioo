@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio de Ingeniería de Software - Nicoll</title>
+    <style>
+        /* CSS para asegurar contraste WCAG AA (Accesibilidad) */
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #1a1a1a; max-width: 900px; margin: auto; padding: 20px; background-color: #f4f4f4; }
+        header { background: #003366; color: white; padding: 2rem; text-align: center; border-radius: 8px 8px 0 0; }
+        nav { background: #004080; padding: 10px; }
+        nav ul { list-style: none; padding: 0; display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
+        nav a { color: white; text-decoration: none; font-weight: bold; padding: 5px 10px; border-radius: 4px; }
+        /* ACCESIBILIDAD: Foco visible para navegación por teclado */
+        nav a:hover, nav a:focus { text-decoration: underline; background-color: rgba(255,255,255,0.2); outline: 2px solid #ffcc00; }
+        main { background: white; padding: 20px; border-radius: 0 0 8px 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        section { margin-bottom: 2rem; border-bottom: 1px solid #eee; padding-bottom: 1rem; }
+        
+        /* Estilos para el contenedor de la imagen SVG */
+        .image-container { text-align: center; margin: 30px 0; padding: 20px; background-color: #e9f0f5; border-radius: 8px; border: 1px solid #c0d6e4; }
+        .visible-svg { max-width: 100%; height: auto; }
+
+        .contact-form { display: grid; gap: 10px; max-width: 400px; margin: auto; }
+        .form-group { margin-bottom: 15px; text-align: left; }
+        input, textarea, button { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-radius; }
+        button { background-color: #0056b3; color: white; font-weight: bold; border: none; cursor: pointer; transition: background-color 0.3s; margin-top: 10px;}
+        button:hover, button:focus { background-color: #004494; outline: 3px solid #ffcc00; }
+        footer { text-align: center; margin-top: 2rem; font-size: 0.9rem; color: #666; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Portafolio de Nicoll Vanessa Gutierrez Garcia</h1>
+        <p>Estudiante de Ingeniería de Software </p>
+    </header>
+
+    <nav aria-label="Menú principal de navegación">
+        <ul>
+            <li><a href="#perfil">Perfil Profesional</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        
+        <section id="perfil">
+            <h2>Propósito y Público Objetivo</h2>
+            <p>Esta página web ha sido diseñada con el propósito de exponer mi trayectoria académica y mis competencias técnicas en ingeniería de software. Está dirigida a docentes para la evaluación de estándares y a potenciales reclutadores del sector tecnológico, demostrando la implementación práctica de principios de semántica y accesibilidad web (WCAG).</p>
+        </section>
+
+        <section id="proyectos">
+            <h2>Proyectos y Habilidades Técnicas</h2>
+            
+            <div class="image-container">
+                <svg class="visible-svg" width="240" height="200" viewBox="0 0 240 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ilustración vectorial de una estación de trabajo informática: un monitor de pantalla plana y una torre de computadora de escritorio.">
+                    <title>Estación de Trabajo de Ingeniería</title>
+                    <rect x="10" y="180" width="220" height="10" rx="2" fill="#555"/>
+                    <rect x="30" y="20" width="140" height="100" rx="5" fill="#333"/> <rect x="40" y="30" width="120" height="80" rx="2" fill="#abe3f5"/> <rect x="90" y="120" width="20" height="40" fill="#555"/> <rect x="60" y="160" width="80" height="10" rx="2" fill="#555"/> <rect x="180" y="40" width="40" height="130" rx="3" fill="#333"/>
+                    <circle cx="200" cy="60" r="5" fill="#555"/> <rect x="190" y="80" width="20" height="5" fill="#555"/> <rect x="190" y="90" width="20" height="5" fill="#555"/> <text x="100" y="80" font-family="monospace" font-size="20" text-anchor="middle" fill="#003366">&lt;/&gt;</text>
+                </svg>
+                <p><strong>Figura 1:</strong> Representación de Estación de Trabajo.</p>
+            </div>
+
+            <article>
+                <h3>Desarrollo de Portafolio Semántico</h3>
+                <p>Implementación de una arquitectura de información basada en HTML5 semántico para optimizar la accesibilidad y la indexación en motores de búsqueda (SEO técnico).</p>
+            </article>
+        </section>
+
+        <section id="contacto">
+            <h2>Formulario de Contacto</h2>
+            <form class="contact-form" action="#" method="post">
+                <div class="form-group">
+                    <label for="full-name">Nombre Completo:</label>
+                    <input type="text" id="full-name" name="full-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email-address">Correo Electrónico:</label>
+                    <input type="email" id="email-address" name="email-address" required>
+                </div>
+                <div class="form-group">
+                    <label for="message-content">Mensaje o Consulta:</label>
+                    <textarea id="message-content" name="message-content" rows="4" required></textarea>
+                </div>
+                <button type="submit" aria-label="Enviar formulario de contacto">Enviar Mensaje</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Nicoll Vanessa Gutierrez Garcia | Ingeniería de Software. Todos los derechos reservados.</p>
+        <p>Validado bajo estándares W3C.</p>
+    </footer>
+
+</body>
+</html>
